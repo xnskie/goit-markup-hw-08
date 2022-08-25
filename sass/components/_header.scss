@@ -1,0 +1,139 @@
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding: 25px 0px;
+    border-bottom: 1px solid #ECECEC;
+    >.container {
+    display: flex;
+    align-items: center;
+    }
+}
+
+.header__logo {
+    margin-right: 90px;
+}
+
+
+.header__list {
+    display: flex;
+}
+
+
+.header__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header__contacts-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.header__contact {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    margin-right: 10px;
+    display: flex;
+}
+
+.header__logo {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: var(--main-title-fw);
+    font-size: var(--big-fs);
+    line-height: var(--title-ln);
+    color: var(--black-logo-color);
+    text-decoration: none;
+}
+
+.header__logo-web {
+    font-family: var(--secondary-font), sans-serif;
+    font-weight: var(--main-title-fw);
+    font-size: var(--big-fs);
+    line-height: var(--title-ln);
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+
+.header__link {
+    font-weight: var(--secondary-title-fw);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+    overflow: hidden;
+    position: relative;
+}
+
+.header__overlay {
+    background-color: var(--accent-color);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 46px;
+    bottom: 0px;
+    transform: translateX(-100%);
+    border-radius: 2px;
+    visibility: hidden;
+    cursor: default;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* .current-overlay {
+    background-color: var(--accent-color);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 46px;
+    bottom: 0px;
+    border-radius: 2px;
+    transform: translateX(0);
+    visibility: var(--accent-color);
+} */
+
+.header__link:hover .header__overlay,
+.header__link:focus .header__overlay {
+    transform: translateX(0);
+    visibility: var(--accent-color);
+}
+
+.current {
+    color: var(--accent-color);
+}
+
+.header__contact {
+    font-weight: var(--secondary-title-fw);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    fill: var(--main-text-color);
+}
+
+.mail {
+    margin-left: 50px;
+}
+
+.header__current {
+    position: relative;
+}
+
+.current::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    left: 0;
+    position: absolute;
+    display: block;
+    border-radius: 2px;
+    bottom: -34px;
+    cursor: default;
+}
+
+.mail-to:active {
+    color: var(--accent-color);
+}

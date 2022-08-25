@@ -1,0 +1,18 @@
+:root {
+  --main-title-color: #212121;
+  --accent-color: #2196F3;
+  --main-text-color: #757575;
+  --main-button-color: #F5F4FA;
+  --black-logo-color: #000000;
+  --white: #ffffff;
+  --btn-second-color: #188CE8;
+  --card-set-gap: 30px;
+  --hero-footer-clr: #2F303A;
+  --secondary-font: "Raleway";
+  --hero-fw: 900;
+  --main-title-fw: 700;
+  --secondary-title-fw: 500;
+  --text-fw: 400;
+  --big-fs: 26px;
+  --title-ln: 1.19;
+}/*# sourceMappingURL=variables.css.map */
