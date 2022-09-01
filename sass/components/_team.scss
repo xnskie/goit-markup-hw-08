@@ -5,10 +5,11 @@
 .team__main-list {
     display: flex;
     gap: var(--card-set-gap);
+    flex-wrap: wrap;
 }
 
 .team__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .team__name {

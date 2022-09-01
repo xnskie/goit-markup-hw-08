@@ -1,14 +1,24 @@
 .clients__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    
 }
-
+.clients__title {
+    margin-bottom: 30px; 
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .clients__item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .clients__link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;

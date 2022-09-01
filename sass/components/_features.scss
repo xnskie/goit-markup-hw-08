@@ -1,11 +1,13 @@
 .features__list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .features__item {
-    width: calc((100% - 60px) / 4);
+    width: 100%;
     &:not(:last-child) {
-        margin-right: var(--card-set-gap);
+        margin-right: 0;
     }
 }
 
@@ -30,13 +32,13 @@
 }
 
 
-.fetures__title {
+.features__title {
     font-weight: var(--main-title-fw);
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
+    text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: inherit;
     margin-bottom: 10px;
 }
 
