@@ -28,6 +28,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+        max-width: 450px;
+    }
+    @include mobile {
+        max-width: 450px;
+    }
+    @include desktop {
+        max-width: 528px;
+    }
 }
 
 
@@ -138,6 +147,9 @@
     @media screen and (max-width: 477px) {
         font-size: 8px;
     }
+    @include desktop {
+        font-size: 14px;
+    }
 }
 
 .backdrop__check {
@@ -190,6 +202,9 @@
     margin-left: 3px;
     @media screen and (max-width: 477px) {
         font-size: 9px;
+    }
+    @include desktop {
+        font-size: 14px;
     }
 }
 

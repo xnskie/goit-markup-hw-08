@@ -4,16 +4,25 @@ nav {
 }
 
 .header {
-    padding: 25px 0px;
+    padding: 0;
     border-bottom: 1px solid #ECECEC;
     >.container {
     display: flex;
     align-items: center;
+    @include tablet {
+        height: 80px;
+    }
+    }
+    @media screen and (max-width: 767px) {
+        display: none;
     }
 }
 
 .header__logo {
     margin-right: 90px;
+    @include tablet {
+        margin-right: 80px;
+    }
 }
 
 
@@ -29,6 +38,19 @@ nav {
 .header__contacts-list {
     display: flex;
     margin-left: auto;
+    @include tablet {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    @include desktop {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+.header__contact-item {
+    @include tablet {
+        margin-left: auto;
+    }
 }
 
 .header__contact {
@@ -108,13 +130,23 @@ nav {
 .header__contact {
     font-weight: var(--secondary-title-fw);
     line-height: 1.14;
+    font-size: 14px;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
     fill: var(--main-text-color);
+    @include tablet {
+        font-size: 12px;
+    }
+}
+.mail-to {
+    margin-bottom: 10px;
 }
 
 .mail {
     margin-left: 50px;
+    @include tablet {
+        margin-left: 0;
+    }
 }
 
 .header__current {
@@ -132,6 +164,9 @@ nav {
     border-radius: 2px;
     bottom: -34px;
     cursor: default;
+    @include tablet {
+        bottom: -33px;
+    }
 }
 
 .mail-to:active {

@@ -7,12 +7,26 @@
     align-items: baseline;
     flex-direction: column;
     align-items: center;
+    @include tablet {
+        flex-direction: row;
+        align-items: baseline;
+        flex-wrap: wrap;
+        padding-left: 76px;
+        padding-right: 89px;
+    }
+    @include desktop {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     }
 }
 
 .footer__address {
     font-style: normal;
     text-align: center;
+    @include desktop {
+        text-align: left;
+    }
 }
 
 .footer__address-address {
@@ -29,7 +43,11 @@
 .footer__address-container {
     display: flex;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
+    @include desktop {
+        align-items: start;
+        margin-right: 70px;
+    }
 }
 
 .footer__logo {
@@ -40,6 +58,7 @@
     letter-spacing: 0.03em;
     color: var(--white);
     text-decoration: none;
+    
 }
 
 .footer__address-list {
@@ -55,6 +74,16 @@
     text-align: center;
     margin-top: 60px;
     margin-bottom: 60px;
+    @include tablet {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+    @include desktop {
+        text-align: left;
+        margin-right: 93px;
+        margin-left: 0;
+    }
 }
 
 .footer__list {
@@ -98,6 +127,13 @@
     flex-direction: column;
     margin-left: 0;
     text-align: center;
+    @include tablet {
+        margin-top: 60px;
+    }
+    @include desktop {
+        text-align: left;
+        margin-left: auto;
+    }
 }
 
 .footer__subscribe {
@@ -133,6 +169,13 @@
     @media screen and (max-width: 320px) {
         width: 290px;
     }
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        max-width: 358px;
+        margin-right: 12px;
+    }
 }
 
 
@@ -153,4 +196,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include desktop {
+        flex-wrap: nowrap;
+    }
 }

@@ -15,6 +15,12 @@
 }
 .clients__item {
     width: calc((100% - 30px) / 2);
+    @include tablet {
+        width: calc((100% - 60px) / 3);
+    }
+    @include desktop {
+        width: calc((100% - 150px) / 6);
+    }
 }
 .clients__item:not(:last-child) {
     margin-right: 0px;

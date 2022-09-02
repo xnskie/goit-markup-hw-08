@@ -7,12 +7,15 @@
 
 .title {
     font-weight: var(--main-title-fw);
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.7;
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
     margin-bottom: 50px;
+    @include desktop {
+        font-size: 36px;
+    }
 }
 
 .about-us__list {
