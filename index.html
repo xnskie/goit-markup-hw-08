@@ -23,13 +23,15 @@
 <body>
     <header class="header">
         <div class="container header__continer">
-            <nav><a href="./index.html" lang="en" class="header__logo"><span class="header__logo-web">Web</span>Studio</a>
+            <nav><a href="./index.html" lang="en" class="header__logo"><span
+                        class="header__logo-web">Web</span>Studio</a>
                 <ul class="header__list list">
                     <li class="header__item"><a href="./index.html" class="header__link link current">Студия<div
                                 class="current-overlay"></div></a></li>
                     <li class="header__item"><a href="./portfolio.html" class="header__link link">Портфолио<div
                                 class="header__overlay"></div></a></li>
-                    <li class="header__item"><a href="" class="header__link link">Контакты<div class="header__overlay"></div></a>
+                    <li class="header__item"><a href="" class="header__link link">Контакты<div class="header__overlay">
+                            </div></a>
                     </li>
                 </ul>
             </nav>
@@ -48,6 +50,68 @@
                         111 11 11</a>
                 </li>
             </ul>
+            <button class="menu-open" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mob-menu">
+            <div class="mob-container">
+            <div class="mob-menu-top">
+            <button class="mob-menu-close">
+                <svg width="30" height="30">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <nav>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a href="./index.html" class="mob-menu-link link current">Студия</a></li>
+                    <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио<div
+                                class="header__overlay"></div></a></li>
+                    <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты<div class="header__overlay">
+                            </div></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mob-menu-bottom">
+            <ul class="mob-menu-contacts-list list">
+                <li class="mob-menu-contact-item mail">
+                    <a href="tel:+380961111111" class="mob-menu-contact-tel link">
+                        +38 096
+                        111 11 11</a>
+                </li>
+                <li class="mob-menu-contact-item">
+                    <a href="mailto:info@devstudio.com" class="mob-menu-contact-mail link mail-to">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="social-menu list">
+                <li class="social-menu-item">
+                    <a href="" class="social-menu-link link">Instagramm</a>
+                </li>
+                <li class="social-menu-item span">
+                    <span class="mob-menu-line"></span>
+                </li>
+                <li class="social-menu-item">
+                    <a href="" class="social-menu-link link">Twitter</a>
+                </li>
+                <li class="social-menu-item">
+                    <span class="mob-menu-line"></span>
+                </li>
+                <li class="social-menu-item">
+                    <a href="" class="social-menu-link link">Facebook</a>
+                </li>
+                <li class="social-menu-item">
+                    <span class="mob-menu-line"></span>
+                </li>
+                <li class="social-menu-item">
+                    <a href="" class="social-menu-link link">Linkedin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
         </div>
     </header>
     <main>
@@ -58,7 +122,7 @@
                 </h1>
                 <button type="button" class="hero__btn btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> 
+        </section>
         <section class="features section">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
@@ -81,7 +145,8 @@
                             </svg>
                         </div>
                         <h3 class="features__title">Пунктуальность</h3>
-                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров влечет
+                        <p class="features__text">Задача организации, в особенности же рамки и место обучения кадров
+                            влечет
                             за собой.</p>
                     </li>
                     <li class="features__item">
@@ -120,8 +185,8 @@
                             height="294" class="about-us__img">
                         <p class="about-us__text">Мобильные приложения</p>
                     </li>
-                    <li class="about-us__item"><img src="./images/img(1).jpg" alt="colop pannel" width="370" height="294"
-                            class="about-us__img" />
+                    <li class="about-us__item"><img src="./images/img(1).jpg" alt="colop pannel" width="370"
+                            height="294" class="about-us__img" />
                         <p class="about-us__text">Дизайнерские решения</p>
                     </li>
                 </ul>
@@ -132,7 +197,8 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <ul class="team__main-list list">
                     <li class="team__item">
-                        <img src="./images/img3.jpg" alt="a man" width="270" height="260" />
+                        <img srcset="./images/img3.jpg 1x, 
+                        ./images/img3-2x.jpg 2x" src="./images/img3.jpg" alt="a man" width="270" height="260" />
                         <div class="team__card-content">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -169,7 +235,8 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/img1).jpg" alt="a woman" width="270" height="260" />
+                        <img srcset="./images/img1).jpg 1x, 
+                        ./images/img1)-2x.jpg 2x" src="./images/img1).jpg" alt="a woman" width="270" height="260" />
                         <div class="team__card-content">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -206,7 +273,9 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/cardn3.jpg" alt="a man in shirt" width="270" height="260" />
+                        <img srcset="./images/cardn3.jpg 1x, 
+                        ./images/cardn3-2x.jpg 2x" src="./images/cardn3.jpg" alt="a man in shirt" width="270"
+                            height="260" />
                         <div class="team__card-content">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -243,7 +312,9 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img src="./images/img(3).jpg" alt="a man with glasses" width="270" height="260" />
+                        <img srcset="./images/img(3).jpg 1x, 
+                        ./images/img(3)-2x.jpg 2x" src="./images/img(3).jpg" alt="a man with glasses" width="270"
+                            height="260" />
                         <div class="team__card-content">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -335,14 +406,16 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__address-container">
-                <a href="./index.html" lang="en" class="footer__logo"><span class="footer__web header__logo-web">Web</span>Studio</a>
+                <a href="./index.html" lang="en" class="footer__logo"><span
+                        class="footer__web header__logo-web">Web</span>Studio</a>
                 <address class="footer__address">
                     <ul class="footer__address-list list">
                         <li class="footer__address-item"><a href="https://bit.ly/3pXMvUd" target="_blank"
                                 class="footer__address-address link">г. Киев, пр-т Леси Украинки, 26</a></li>
                         <li class="footer__address-item"><a href="mailto:info@example.com"
                                 class="footer__address-link link">info@example.com</a></li>
-                        <li class="footer__address-item"><a href="tel:+380991111111" class="footer__address-link link">+38 099 111 11
+                        <li class="footer__address-item"><a href="tel:+380991111111"
+                                class="footer__address-link link">+38 099 111 11
                                 11</a>
                         </li>
                     </ul>
@@ -385,16 +458,17 @@
                 <p class="footer__title">Подпишитесь на рассылку</p>
                 <div class="footer__subscribe">
                     <form class="footer__form">
-                <label for="footer-email"></label>
-                    <input type="email" name="footer-email" id="footer-email" class="footer__input" placeholder="E-mail">
-                    <button type="submit" class="hero__btn footer-btn">Подписаться
-                        <span class="footer__send-span">
-                            <svg class="footer__btn-icon" width="24" height="24">
-                                <use href="./images/icons.svg#icon-send"></use>
-                            </svg>
-                        </span>
-                    </button>
-                </form>
+                        <label for="footer-email"></label>
+                        <input type="email" name="footer-email" id="footer-email" class="footer__input"
+                            placeholder="E-mail">
+                        <button type="submit" class="hero__btn footer-btn">Подписаться
+                            <span class="footer__send-span">
+                                <svg class="footer__btn-icon" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-send"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -443,18 +517,19 @@
                     <textarea name="user-comment" id="comment" rows="5" placeholder="Введите текст"
                         class="backdrop__text-area"></textarea>
                 </div>
-            <div class="backdrop__checkbox">
-                <input type="checkbox" class="backdrop__check visually-hidden" name="policy" id="policy"
-                    value="true">
-                <label class="backdrop__text" for="policy">
-                    <span class="checkbox-span">
-                        <svg class="check-icon" width="13" height="13">
-                            <use href="./images/icons.svg#icon-vector"></use>
-                        </svg>
-                    </span>Соглашаюсь с рассылкой и принимаю<a href="" class="backdrop__link">Условия договора</a></label>
-            </div>
-            <button class="hero__btn " type="submit">Отправить</button>
-        </form>
+                <div class="backdrop__checkbox">
+                    <input type="checkbox" class="backdrop__check visually-hidden" name="policy" id="policy"
+                        value="true">
+                    <label class="backdrop__text" for="policy">
+                        <span class="checkbox-span">
+                            <svg class="check-icon" width="13" height="13">
+                                <use href="./images/icons.svg#icon-vector"></use>
+                            </svg>
+                        </span>Соглашаюсь с рассылкой и принимаю<a href="" class="backdrop__link">Условия
+                            договора</a></label>
+                </div>
+                <button class="hero__btn " type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
