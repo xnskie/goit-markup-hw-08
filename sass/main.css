@@ -1340,7 +1340,6 @@ nav {
   .projects__btn-list {
     flex-wrap: wrap;
     justify-content: start;
-    margin-top: 60px;
   }
 }
 
