@@ -123,6 +123,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 nav {
   display: flex;
@@ -151,7 +157,6 @@ nav {
 }
 @media screen and (max-width: 767px) {
   .header {
-    position: fixed;
     width: 100%;
     z-index: 2;
   }
@@ -479,6 +484,7 @@ nav {
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
+    background-position: center;
   }
 }
 .hero .container {
@@ -515,23 +521,28 @@ nav {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-des-2x.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 360px;
   height: 84px;
   min-height: 84px;
 }
 @media screen and (min-width: 390px) {
   .hero__title {
     font-size: 26px;
+    width: 360px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -566,6 +577,25 @@ nav {
 }
 .hero__btn:hover, .hero__btn:focus {
   background: var(--btn-second-color);
+}
+@media screen and (max-width: 479px) {
+  .hero__btn {
+    width: 50%;
+    max-width: 200px;
+    max-height: 50px;
+    font-size: 13px;
+    height: 40px;
+  }
+}
+@media screen and (min-width: 420px) {
+  .hero__btn {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__btn {
+    font-size: 16px;
+  }
 }
 
 .features__list {
@@ -957,6 +987,7 @@ nav {
   .footer__input-container {
     text-align: left;
     margin-left: auto;
+    margin-top: 0;
   }
 }
 
